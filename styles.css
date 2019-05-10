@@ -1,0 +1,61 @@
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 5px;
+  width: 95vw;
+  height: 95vh;
+  font-family: Lato;
+  font-weight: 300;
+}
+
+.space {
+  margin-top: 4vh;
+}
+.btn-roll {
+  margin-bottom: 3vh;
+}
+.my-dynamic {
+  width: 30vw;
+  height: 9vh;
+}
+
+.bigplane {
+  width: 90vw;
+  height: 30vh;
+}
+
+.player-score {
+  width: 50px;
+  height: 50px;
+
+  text-align: center;
+  font-size: 30px;
+  font-weight: 100;
+  color: #eb4d4d;
+}
+
+.player-score-current {
+  height: 100px;
+  width: 100px;
+
+  text-align: center;
+  font-size: 70px;
+  font-weight: 80;
+  color: black;
+}
+
+.dice {
+  margin: 5vw;
+}
+
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+
+/* set the overriding variables */
+$grid-breakpoints: (
+  xxxs: 0,
+  xxs: 320px
+);
