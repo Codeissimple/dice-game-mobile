@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="src/styles.css" media="screen" />
+	<title>Hello, world!</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+
+		<!-- Top row with settings and dynamic content -->
+		<div class="row d-flex align-items-center justify-content-around">
+			<div class="col-xxs-3">
+
+				<button type="button" class="btn bg-white">
+					<img src="https://img.icons8.com/ios/25/000000/add.png">
+				</button>
+			</div>
+
+			<div class="col-xxs-6 my-dynamic d-flex align-items-center justify-content-center">
+				<input type="number" style="width:30%" class="final-score" value="100">
+			</div>
+
+			<div class="col-xxs-3">
+				<div class="btn-group dropleft">
+					<button class="btn bg-white" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+						<img src="https://img.icons8.com/ios/25/000000/settings.png">
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item" href="#">Rules</a>
+						<a class="dropdown-item" href="#">Set Score</a>
+						<a class="dropdown-item" href="#">About</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- current score and player scores -->
+
+		<div class="row d-flex align-items-center justify-content-around scores-row space">
+			<div class="col-xxs-3 player">
+				<div class="player-img">
+					<img src="/player-1.png">
+				</div>
+				<div class="player-score" id="score-0">43</div>
+			</div>
+
+			<div class="col-xxs-6 player-score-current">13</div>
+
+			<div class="col-xxs-3 player">
+				<div class="player-img">
+					<img src="/player-2.png">
+				</div>
+				<div class="player-score" id="score-1">11</div>
+			</div>
+		</div>
+
+		<!-- DICE ROLL -->
+
+		<div class="row d-flex align-items-center justify-content-center space">
+			<div class="col--12 bigplane bg-secondary d-flex align-items-center justify-content-center">
+				<img src="/dice-5.png" width="110" height="110" alt="Dice" class="dice" id="dice-1">
+				<img src="/dice-3.png" width="110" height="110" alt="Dice" class="dice" id="dice-2">
+			</div>
+		</div>
+
+		<!-- Action buttons block -->
+
+		<div class="row d-flex align-items-center justify-content-center btn-blk space">
+			<div class="col-">
+				<button type="button" class="btn btn-success btn-roll pb-1">
+					<h4>ROLL</h4>
+				</button>
+			</div>
+		</div>
+
+		<div class="row d-flex align-items-center justify-content-center btn-blk">
+			<div class="col-">
+				<button type="button" class="btn btn-warning btn-hold pb-1">
+					<h4>HOLD</h4>
+				</button>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	 crossorigin="anonymous"></script>
+</body>
+
+</html>
