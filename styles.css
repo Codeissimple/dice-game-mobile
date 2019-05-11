@@ -9,6 +9,7 @@ body {
   height: 95vh;
   font-family: Lato;
   font-weight: 300;
+  background: #beeb71;
 }
 
 .space {
@@ -17,24 +18,36 @@ body {
 .btn-roll {
   margin-bottom: 3vh;
 }
+.btn {
+  border-radius: 5px;
+}
 .my-dynamic {
   width: 30vw;
   height: 9vh;
 }
 
 .bigplane {
-  width: 90vw;
+  margin: 1px;
+  width: 82vw;
   height: 30vh;
+  background-color: #6ab417;
 }
 
 .player-score {
   width: 50px;
   height: 50px;
-
   text-align: center;
   font-size: 30px;
   font-weight: 100;
-  color: #eb4d4d;
+}
+
+.active {
+  background-color: #376d03;
+}
+
+.player-name {
+  text-align: center;
+  font-weight: bold;
 }
 
 .player-score-current {
@@ -49,6 +62,14 @@ body {
 
 .dice {
   margin: 5vw;
+}
+
+.winner {
+  background-color: #fcd307;
+}
+.winner .player-name {
+  font-weight: 300;
+  color: #eb4d4d;
 }
 
 @import "bootstrap/functions";
