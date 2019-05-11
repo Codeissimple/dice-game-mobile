@@ -1,12 +1,4 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<!-- Bootstrap CSS -->
+<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	 crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="src/styles.css" media="screen" />
@@ -20,19 +12,21 @@
 		<div class="row d-flex align-items-center justify-content-around">
 			<div class="col-xxs-3">
 
-				<button type="button" class="btn bg-white">
-					<img src="https://img.icons8.com/ios/25/000000/add.png">
-				</button>
+				<div class="btn-group">
+					<button type="button" class="btn-new btn bg-transparent">
+						<img src="/new-game.png">
+					</button>
+				</div>
 			</div>
 
 			<div class="col-xxs-6 my-dynamic d-flex align-items-center justify-content-center">
-				<input type="number" style="width:30%" class="final-score" value="100">
+				<input type="number" style="width:30%; padding-left: 55" class="final-score">
 			</div>
 
 			<div class="col-xxs-3">
 				<div class="btn-group dropleft">
-					<button class="btn bg-white" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-						<img src="https://img.icons8.com/ios/25/000000/settings.png">
+					<button type="button" class="btn bg-transparent" id="dropdownMenuButton" data-toggle="dropdown">
+						<img src="/settings.png">
 					</button>
 					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 						<a class="dropdown-item" href="#">Rules</a>
@@ -43,20 +37,32 @@
 			</div>
 		</div>
 
-		<!-- current score and player scores -->
+		<!-- 
+			================================
+			current score and player scores 
+			================================
+			-->
 
-		<div class="row d-flex align-items-center justify-content-around scores-row space">
-			<div class="col-xxs-3 player">
+		<!-- Player 1 -->
+
+		<div class="row d-flex align-items-center justify-content-around scores-row space ">
+			<div class="col-xxs-3 pt-2 pr-3 pl-3 pb-2 player-0-panel">
 				<div class="player-img">
+					<div class="player-name" id="name-0">Adam</div>
 					<img src="/player-1.png">
 				</div>
 				<div class="player-score" id="score-0">43</div>
 			</div>
 
-			<div class="col-xxs-6 player-score-current">13</div>
+			<!-- current score of the active player -->
 
-			<div class="col-xxs-3 player">
+			<div class="col-xxs-6 player-score-current" id="current-score">18</div>
+
+			<!-- Player 2 -->
+
+			<div class="col-xxs-3 pt-2 pr-3 pl-3 pr-3 pb-2 player-1-panel">
 				<div class="player-img">
+					<div class="player-name" id="name-1">Shaina</div>
 					<img src="/player-2.png">
 				</div>
 				<div class="player-score" id="score-1">11</div>
@@ -66,7 +72,7 @@
 		<!-- DICE ROLL -->
 
 		<div class="row d-flex align-items-center justify-content-center space">
-			<div class="col--12 bigplane bg-secondary d-flex align-items-center justify-content-center">
+			<div class="col--12 d-block bigplane d-flex align-items-center justify-content-center">
 				<img src="/dice-5.png" width="110" height="110" alt="Dice" class="dice" id="dice-1">
 				<img src="/dice-3.png" width="110" height="110" alt="Dice" class="dice" id="dice-2">
 			</div>
@@ -100,6 +106,7 @@
 	 crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 	 crossorigin="anonymous"></script>
+	<script src="/src/script.js"></script>
 </body>
 
 </html>
