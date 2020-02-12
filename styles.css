@@ -86,4 +86,35 @@ $grid-breakpoints: (
   max-width: 60%;
   border: 2px solid #444;
   background: white;
-};
+}
+
+.popup-overlay {
+  /*Hides pop-up when there is no "active" class*/
+  visibility: hidden;
+  position: absolute;
+  background: #ffffff;
+  border: 3px solid #666666;
+  width: 50%;
+  height: 50%;
+  left: 25%;
+}
+
+.popup-overlay.pop-color {
+  /*displays pop-up when "active" class is present*/
+  visibility: visible;
+  text-align: center;
+}
+
+.popup-content {
+  /*Hides pop-up content when there is no "active" class */
+  visibility: hidden;
+}
+
+.popup-content.pop-color {
+  /*Shows pop-up content when "active" class is present */
+  visibility: visible;
+}
+
+.pop-color {
+background: rgb(155, 199, 154);
+}
