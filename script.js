@@ -106,3 +106,13 @@ function hideTheDice() {
 
 $(".dropdown-toggle").dropdown();
 
+$(".open").on("click", function() {
+  $(".popup-overlay, .popup-content").addClass("pop-color");
+});
+
+//removes the "active" class to .popup and .popup-content when the "Close" button is clicked
+$(".close, .popup-overlay").on("click", function() {
+  $(".popup-overlay, .popup-content").removeClass("pop-color");
+});
+
+$(".popup-content").css("overflow", "scroll");
