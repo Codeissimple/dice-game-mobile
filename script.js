@@ -115,4 +115,4 @@ $(".close, .popup-overlay").on("click", function() {
   $(".popup-overlay, .popup-content").removeClass("pop-color");
 });
 
-$(".popup-content").css("overflow", "scroll");
+//$(".popup-content").css("overflow-x: hidden", "overflow-y: hidden");
