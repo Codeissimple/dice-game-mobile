@@ -15,12 +15,23 @@ body {
 .space {
   margin-top: 4vh;
 }
-.btn-roll {
+
+
+.btn-roll, .btn-hold {
   margin-bottom: 3vh;
+  box-shadow: 5px 5px 10px #535353;
+}
+
+
+.btn-menu {
+border-radius: 100%;
+  box-shadow: 5px 5px 10px #535353;
+
 }
 .btn {
-  border-radius: 5px;
+  border-radius: 10px; 
 }
+
 .my-dynamic {
   width: 30vw;
   height: 9vh;
@@ -43,6 +54,8 @@ body {
 
 .active {
   background-color: #376d03;
+  box-shadow: 5px 5px 10px #535353;
+
 }
 
 .player-name {
@@ -62,11 +75,13 @@ body {
 
 .dice {
   margin: 5vw;
+  box-shadow: 10px 10px 10px #535353;
 }
 
 .winner {
   background-color: #fcd307;
 }
+
 .winner .player-name {
   font-weight: 300;
   color: #eb4d4d;
@@ -85,7 +100,6 @@ $grid-breakpoints: (
   padding: 0 10px;
   max-width: 60%;
   border: 2px solid #black;
-  background: white;
 }
 
 .popup-overlay {
@@ -95,6 +109,7 @@ $grid-breakpoints: (
   width: 50%;
   height: 50%;
   left: 25%;
+  border-radius: 50px;
 
 }
 
@@ -107,6 +122,8 @@ $grid-breakpoints: (
 .popup-content {
   /*Hides pop-up content when there is no "active" class */
   visibility: hidden;
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px #535353;
 }
 
 .popup-content.pop-color {
@@ -117,6 +134,10 @@ $grid-breakpoints: (
 
 .pop-color {
   background: rgb(155, 199, 154);
-  border: none;
-  
 }
+/* 
+
+-moz-border-radius: 15px;
+-webkit-border-radius: 15px;  
+-moz-box-shadow: 3px 3px 5px #535353;
+-webkit-box-shadow: 3px 3px 5px #535353; 
